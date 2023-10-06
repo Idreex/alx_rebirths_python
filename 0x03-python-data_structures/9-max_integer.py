@@ -5,10 +5,10 @@ def max_integer(my_list=[]):
     for i in range(len(my_list) -1):
 
         if my_list[i] > my_list[i+1]:
-            # my_list[i], my_list[i+1] = my_list[i+1], my_list[i]
-            tmp = my_list[i]
-            my_list[i] = my_list[i+1]
-            my_list[i+1] = tmp
+            my_list[i], my_list[i+1] = my_list[i+1], my_list[i]
+            # tmp = my_list[i]
+            # my_list[i] = my_list[i+1]
+            # my_list[i+1] = tmp
         
 
 if __name__ == "__main__":
