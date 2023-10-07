@@ -9,7 +9,7 @@ def max_integer(my_list=[]):
             # tmp = my_list[i]
             # my_list[i] = my_list[i+1]
             # my_list[i+1] = tmp
-        
+    
 
 if __name__ == "__main__":
     my_list = [1, 90, 2, 13, 34, 5, -13, 3]
