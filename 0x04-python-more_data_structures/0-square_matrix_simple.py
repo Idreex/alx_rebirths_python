@@ -10,6 +10,3 @@ def square_matrix_simple(matrix=[]):
         new_row = []
 
     return new_matrix
-
-
-
