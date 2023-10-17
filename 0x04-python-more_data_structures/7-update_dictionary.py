@@ -8,7 +8,8 @@ def update_dictionary(a_dictionary, key, value):
     
     
 a_dictionary = { 'language': "C", 'number': 89, 'track': "Low level" }
-key = 'track'
-value = 'high level'
+key = 'language'
+value = 'python'
 
-update_dictionary(a_dictionary, key, value)
+update_dictionary(a_dictionary, 'city', "San Francisco")
+update_dictionary(a_dictionary, 'language', "python")
