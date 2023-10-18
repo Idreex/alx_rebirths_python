@@ -18,4 +18,10 @@ def best_score(a_dictionary):
 
     
 a_dictionary = {'John': 52, 'Bob': 94, 'Mike': 14, 'Molly': 16, 'Adam': 10}
-best_score(a_dictionary)
+best_score(a_dictionary) 
+
+# OR
+
+maxi = max(zip(a_dictionary.values(), a_dictionary.keys()))
+
+print(f"Best_Score: {maxi[0]}")
