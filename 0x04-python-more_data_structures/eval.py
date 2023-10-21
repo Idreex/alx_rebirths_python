@@ -23,11 +23,47 @@ supermarket = { "milk": {"quantity": 20, "price": 1.19},
                "oranges":  {"quantity": 40, "price": 0.99},
                "bananas": {"quantity": 23, "price": 1.29}}
 
-print(supermarket["milk"]["quantity"]*supermarket["milk"]["price"])
+total_value = 0
+for article in supermarket:
+    quantity = supermarket[article]["quantity"]
+    price = supermarket[article]["price"]
+    total_value += quantity * price
+
+print(f"The total price for buying everything: {total_value:7.2f}")
 
 
-d = {"a":123, "b":34, "c":304, "d":99}
-for key in d:
-    print(d[key])
+# def dict_merge_sum(d1, d2):
+#     """ Merging and calculating the sum of two dictionaries: 
+#     Two dicionaries d1 and d2 with numerical values and
+#     possibly disjoint keys are merged and the values are added if
+#     the exist in both values, otherwise the missing value is taken to
+#     be 0"""
+    
+#     merged_sum = d1.copy()
+#     for key, value in d2.items():
+#         if key in d1:
+#             d1[key] += value
+#         else:
+#             d1[key] = value
+    
+#     return merged_sum
+
+# d1 = dict(a=4, b=5, d=8)
+# d2 = dict(a=1, d=10, e=9)
+
+# print(dict_merge_sum(d1, d2))
 
 
+def dict_sum(d1, d2):
+    """  Merging and calculating the sum of two dictionaries: 
+    Two dicionaries d1 and d2 with numerical values and
+    possibly disjoint keys are merged and the values are added if
+    the exist in both values, otherwise the missing value is taken to
+    be 0"""
+    
+    return { k: d1.get(k, 0) + d2.get(k, 0) for k in set(d1) | set(d2) }
+
+d1 = dict(a=4, b=5, d=8)
+d2 = dict(a=1, d=10, e=9)
+
+print(dict_merge_sum(d1, d2))
