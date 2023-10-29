@@ -142,3 +142,13 @@ for customer in customers:
         print(f"{quantity:3d} {name:12s} {unit_price:8.2f} {item_sum:8.2f}")
         total_sum += item_sum
     print(f"Total sum:             {total_sum:11.2f}")
+
+
+
+
+
+
+
+
+
+    
