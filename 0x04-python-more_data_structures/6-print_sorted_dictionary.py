@@ -8,11 +8,10 @@ def print_sorted_dictionary(a_dictionary):
     print(dict(lst_dict))
 
 
-
-
-
-
 a_dictionary = { 'language': "C", 'Number': 89, 'track': "Low level", 'ids': [1, 2, 3] }
 
+sorted = sorted(a_dictionary.items())
+
+print(sorted)
 print_sorted_dictionary(a_dictionary)
 

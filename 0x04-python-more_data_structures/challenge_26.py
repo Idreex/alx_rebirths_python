@@ -36,4 +36,19 @@ for row in matrix:
     for i in row:
         new.append(i*i)
     print(new)
-        
+
+
+def weight_average(my_list=[]):
+    up = 0
+    dw = 0
+    for i in range(len(my_list)):
+        res = my_list[i][0] * my_list[i][1]
+        up += res
+        re = my_list[i][1]
+        dw += re
+    return up/dw
+
+my_list = [(1, 2), (2, 1), (3, 10), (4, 2)]
+print(weight_average(my_list))
+
+
