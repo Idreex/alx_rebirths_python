@@ -8,7 +8,7 @@ def search_replace(my_list, search, replace):
     print(my_list)
     return new_list
     
-my_list = [1,2,3,4,5]
+my_list = [1,2,3,4,5,3]
 search = 3
 replace = 9
         
