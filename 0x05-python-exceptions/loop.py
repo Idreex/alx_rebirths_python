@@ -9,7 +9,7 @@ guess = 0
 while guess != to_be_guessed:
     guess = int(input("New number: "))
     if guess == 0: # giving up
-        print("Sorry that you're giving up!")
+        print("Sorry that you're givi ng up!")
         break # break out of a loop, don't execute "else"
     if guess < lower_bound or guess > upper_bound:
         print("guess not within boundaries!")
