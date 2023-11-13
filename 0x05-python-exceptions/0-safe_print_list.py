@@ -7,11 +7,11 @@ def safe_print_list(my_list=[], x=0):
         print()
         print(f'number of items to print is: {x}')
     except IndexError as e:
+        print()
         print('Index not exist')
     
-    
-        
 
 
 my_list = [1, 2, 3, 4, 5]
-safe_print_list(my_list,2)
+x = 4
+safe_print_list(my_list,x)
